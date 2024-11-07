@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Israel</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font link -->
+    <link rel="stylesheet" href="css/icon.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Protest+Riot&family=Protest+Strike&display=swap"
+        rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta property="og:image" content="https://goisrael.io/images/home-logo.png">
+    <meta property="og:url" content="https://goisrael.io/">
+    <meta property="og:site_name" content="Go Israel">
+    <style>
+        .wallet-img img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .wallet-img:hover img {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <section class="hero position-relative">
+        <!-- Header -->
+        <header>
+            <nav class="container-fluid navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="d-flex gap-2">
+                        <img src="images/logo.png" alt="logo" width="74" height="74" />
+                        <a class="navbar-brand" href="#">GO ISRAEL</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#buy_section">How To Buy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#how_works">How It Works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#who_goil">Why GOIL?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#leader_section">Leaderboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#token_section">Tokenomics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq_section">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- Hero -->
+    <section class="hero-sec padd-120">
+        <div class="container">
+            <div class="row hero-sec flex-row-reverse">
+                <div class="col-lg-6 hero-img text-center text-lg-end ms-lg-auto">
+                    <img src="images/home-logo.png" alt="hero logo" width="100%" />
+                </div>
+                <div class="col-lg-6">
+                    <h2>Stand with Israel! <br>Join <span>GOIL</span> Community!</h2>
+                    <p class="fw-bolder">Go Israel (GOIL) unites supporters worldwide, giving strength to their voice.
+                        Join our global
+                        community as we demonstrate the undeniable support for Israel</p>
+                    <div class="d-grid d-sm-flex gap-4 align-items-center">
+                        <!-- data-bs-target="#success-modal" -->
+                        <button id="buyNowBtn" class="default-btn" data-bs-toggle="modal">Buy GOIL Now</button>
+                        <ul class="social-list mb-0">
+                            <li><a href="https://x.com/goil_goisrael?s=11"><svg width="21" height="21"
+                                        viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_2192_20871)">
+                                            <path
+                                                d="M12.3668 8.9999L19.6645 0.699951H17.9358L11.5965 7.90557L6.53708 0.699951H0.700195L8.35269 11.5976L0.700195 20.3H2.42892L9.11905 12.6886L14.4633 20.3H20.3002M3.05285 1.97526H5.70865L17.9345 19.0867H15.278"
+                                                fill="black" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2192_20871">
+                                                <rect width="19.6" height="19.6" fill="white"
+                                                    transform="translate(0.700195 0.699951)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a></li>
+                            <!-- <li><a href="#">
+                  <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.12148 9.15343C8.43398 6.39637 12.6356 4.56376 14.7458 3.67523C20.7519 1.15336 22.0142 0.718245 22.8256 0.699951C23.0059 0.699951 23.4032 0.736538 23.6736 0.954098C23.8892 1.13507 23.9441 1.37092 23.9801 1.55255C24.016 1.73418 24.0519 2.11442 24.016 2.40515C23.6913 5.85148 22.2847 14.2142 21.5634 18.0603C21.2563 19.6924 20.6618 20.2372 20.0842 20.2915C18.822 20.3999 17.8662 19.4572 16.6575 18.6581C14.7458 17.407 13.6822 16.6269 11.8241 15.3934C9.67793 13.9783 11.0663 13.1982 12.2932 11.9288C12.6179 11.6021 18.1549 6.52311 18.2627 6.0697C18.281 6.01482 18.281 5.79726 18.1549 5.6888C18.0282 5.5797 17.8479 5.61563 17.7041 5.65222C17.5055 5.6888 14.4754 7.72002 8.57772 11.7289C7.71205 12.328 6.93654 12.6181 6.23356 12.5998C5.45805 12.5815 3.97956 12.1646 2.86105 11.802C1.50865 11.3663 0.426077 11.1304 0.516237 10.3686C0.570464 9.9701 1.11142 9.57026 2.12148 9.15343Z" fill="black" />
+                  </svg>
+
+                </a></li>
+              <li><a href="">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.101 0.73999C8.90776 0.73999 8.50635 0.754102 7.25195 0.81055C6.00069 0.86935 5.14613 1.0677 4.39819 1.35857C3.61309 1.65353 2.90189 2.11642 2.31432 2.71489C1.7164 3.30229 1.25357 4.01285 0.958002 4.79719C0.664786 5.54434 0.466434 6.3989 0.41077 7.65017C0.35589 8.90535 0.34021 9.30676 0.34021 12.5C0.34021 15.6932 0.354322 16.0931 0.41077 17.3475C0.468786 18.5995 0.667138 19.4541 0.958002 20.202C1.25318 20.9868 1.71605 21.6977 2.31432 22.2851C2.90136 22.8837 3.61201 23.3468 4.39663 23.6422C5.14456 23.9331 5.99991 24.1314 7.25117 24.1886C8.50557 24.2459 8.90619 24.26 12.0994 24.26C15.2942 24.26 15.6933 24.2459 16.9477 24.1894C18.1997 24.1314 19.0559 23.9331 19.8038 23.6422C20.5881 23.347 21.2985 22.8842 21.8853 22.2859C22.4837 21.6981 22.9468 20.987 23.2424 20.202C23.5325 19.4541 23.7301 18.5995 23.7889 17.3482C23.8453 16.0938 23.8602 15.694 23.8602 12.5C23.8602 9.30597 23.8453 8.90535 23.7897 7.65095C23.7301 6.3989 23.5317 5.54434 23.2424 4.79719C22.9471 4.01228 22.4842 3.30116 21.8861 2.71332C21.299 2.11465 20.588 1.65172 19.803 1.357C19.0535 1.06692 18.1982 0.868566 16.9461 0.811334C15.6917 0.754102 15.2919 0.73999 12.0979 0.73999H12.1002H12.101ZM11.0465 2.85914H12.1002C15.2401 2.85914 15.6125 2.87012 16.8528 2.92657C17.999 2.97909 18.6215 3.17117 19.0363 3.33189C19.5851 3.54514 19.9763 3.79994 20.3879 4.21154C20.7987 4.62314 21.0543 5.01514 21.2675 5.56394C21.4282 5.97789 21.6203 6.60039 21.6728 7.7466C21.7293 8.9861 21.7411 9.3585 21.7411 12.4976C21.7411 15.636 21.7293 16.0084 21.6728 17.2479C21.6203 18.3941 21.4282 19.0166 21.2675 19.4306C21.0791 19.941 20.7785 20.4026 20.3879 20.7814C20.0088 21.172 19.5469 21.4727 19.0363 21.661C18.6223 21.8233 17.999 22.0138 16.8528 22.0664C15.6133 22.1228 15.2401 22.1354 12.1002 22.1354C8.96029 22.1354 8.58789 22.1228 7.34917 22.0664C6.20218 22.0138 5.57968 21.8218 5.16495 21.661C4.61615 21.4478 4.22415 21.193 3.81255 20.7814C3.4218 20.4023 3.12096 19.9404 2.93211 19.4298C2.77139 19.0158 2.57931 18.3933 2.52757 17.2471C2.47112 16.0068 2.45936 15.6344 2.45936 12.4945C2.45936 9.3538 2.47112 8.98375 2.52757 7.74346C2.5801 6.59725 2.77061 5.97476 2.93211 5.56002C3.14536 5.01122 3.40095 4.61922 3.81255 4.20762C4.19208 3.81719 4.65417 3.51663 5.16495 3.32797C5.57968 3.16647 6.20218 2.97517 7.34839 2.92265C8.43344 2.87325 8.85367 2.85914 11.0457 2.85601V2.85914H11.0465ZM18.3785 4.8113C18.1931 4.8113 18.0094 4.84782 17.8381 4.91878C17.6668 4.98974 17.5112 5.09375 17.3801 5.22486C17.2489 5.35598 17.1449 5.51163 17.074 5.68294C17.003 5.85425 16.9665 6.03786 16.9665 6.22329C16.9665 6.40871 17.003 6.59232 17.074 6.76363C17.1449 6.93494 17.2489 7.09059 17.3801 7.22171C17.5112 7.35282 17.6668 7.45683 17.8381 7.52779C18.0094 7.59875 18.1931 7.63527 18.3785 7.63527C18.753 7.63527 19.1121 7.48651 19.3769 7.22171C19.6417 6.95691 19.7905 6.59777 19.7905 6.22329C19.7905 5.8488 19.6417 5.48966 19.3769 5.22486C19.1121 4.96006 18.753 4.8113 18.3785 4.8113ZM12.101 6.46084C10.4992 6.46084 8.96303 7.09715 7.83039 8.22978C6.69776 9.36241 6.06145 10.8986 6.06145 12.5004C6.06145 14.1022 6.69776 15.6384 7.83039 16.771C8.96303 17.9036 10.4992 18.5399 12.101 18.5399C13.7028 18.5399 15.239 17.9036 16.3716 16.771C17.5042 15.6384 18.1405 14.1022 18.1405 12.5004C18.1405 10.8986 17.5042 9.36241 16.3716 8.22978C15.239 7.09715 13.7028 6.46084 12.101 6.46084ZM12.101 8.57999C13.1406 8.57999 14.1377 8.99299 14.8729 9.72813C15.608 10.4633 16.021 11.4603 16.021 12.5C16.021 13.5396 15.608 14.5367 14.8729 15.2718C14.1377 16.007 13.1406 16.42 12.101 16.42C11.0613 16.42 10.0643 16.007 9.32914 15.2718C8.59399 14.5367 8.18099 13.5396 8.18099 12.5C8.18099 11.4603 8.59399 10.4633 9.32914 9.72813C10.0643 8.99299 11.0613 8.57999 12.101 8.57999Z" fill="black" />
+                  </svg>
+
+                </a></li> -->
+                            <li><a
+                                    href="https://discord.com/channels/1247063478246576250/1264858220720160769#:~:text=%23%F0%9F%91%91%E2%94%82admins-,35sKZTcN,-0">
+                                    <svg width="24" height="20" viewBox="0 0 24 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.3664 2.46395C18.8598 1.74503 17.2488 1.22255 15.5646 0.925049C15.3578 1.30644 15.1161 1.81942 14.9495 2.22749C13.1591 1.95289 11.3852 1.95289 9.62778 2.22749C9.46121 1.81942 9.21407 1.30644 9.00537 0.925049C7.31934 1.22255 5.70653 1.74695 4.19989 2.46776C1.161 7.15114 0.337209 11.7182 0.749106 16.2204C2.76466 17.7555 4.71797 18.688 6.63832 19.2982C7.11246 18.6326 7.53534 17.9252 7.89963 17.1796C7.20582 16.9107 6.5413 16.5789 5.9134 16.1937C6.07998 16.0678 6.24292 15.9363 6.40034 15.8009C10.2301 17.6277 14.3911 17.6277 18.1751 15.8009C18.3344 15.9363 18.4973 16.0678 18.6621 16.1937C18.0323 16.5808 17.366 16.9126 16.6722 17.1815C17.0364 17.9252 17.4575 18.6346 17.9335 19.3C19.8557 18.6898 21.8108 17.7574 23.8263 16.2204C24.3096 11.0012 23.0007 6.47608 20.3664 2.46395ZM8.42138 13.4516C7.27174 13.4516 6.32893 12.357 6.32893 11.0241C6.32893 9.69114 7.2516 8.59467 8.42138 8.59467C9.59119 8.59467 10.534 9.68922 10.5138 11.0241C10.5156 12.357 9.59119 13.4516 8.42138 13.4516ZM16.1541 13.4516C15.0044 13.4516 14.0616 12.357 14.0616 11.0241C14.0616 9.69114 14.9843 8.59467 16.1541 8.59467C17.3239 8.59467 18.2667 9.68922 18.2465 11.0241C18.2465 12.357 17.3239 13.4516 16.1541 13.4516Z"
+                                            fill="black" />
+                                    </svg>
+
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To buy -->
+    <section id="buy_section" class="buy-section padd-120">
+        <div class="container position-relative">
+            <div class="text-center mb-4">
+                <div class="position-relative d-inline">
+                    <h2 class="title">How to buy</h2>
+                    <span class="qus-icon">?</span>
+                </div>
+            </div>
+            <div class="buy-content row align-items-center">
+                <div class="col-lg-7 col-xl-8">
+                    <div class="row">
+                        <div class="col-sm-6 payment-methods">
+                            <h3>01</h3>
+                            <h4>Connect Your
+                                Wallet</h4>
+                            <p>Use the widget to link your preferred wallet</p>
+                        </div>
+                        <div class="col-sm-6 payment-methods">
+                            <h3>02</h3>
+                            <h4>Select Payment Currency</h4>
+                            <p>Pick the currency you’d like to use (USDT/ETH) to buy $GOIL </p>
+                        </div>
+                        <div class="col-sm-6 payment-methods">
+                            <h3>03</h3>
+                            <h4>Specify Amount</h4>
+                            <p>Decide the amount of $GOIL coins you’d like to purchase and proceed with the transaction
+                                to complete your order</p>
+                        </div>
+                        <div class="col-sm-6 payment-methods">
+                            <h3>04</h3>
+                            <h4>Buy $GOIL Coins</h4>
+                            <p>Confirm the transaction through your connected wallet to finalize the purchase</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="buyModal" class="col-lg-5 col-xl-4">
+                    <div class="buy-tab">
+                        <h3>Buy $GOIL Now!</h3>
+                        <div class="buy-stage">
+                            <h3 class="active">Pre sale</h3>
+                            <h3>First stage</h3>
+                            <h3>Second stage</h3>
+                            <h3>Final stage</h3div>
+                        </div>
+                        <p>USD raised: <span class="amount-raised">$0</span> / <span
+                                class="amount-to-rise">$7,102,023.00</span></p>
+                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%">0%</div>
+                        </div>
+                        <div class="amount">
+                            <div class="d-grid gap-2">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                            <p>1 $GOIL = <span id="goilUsd" class="GOIL-price">$0.001209</span></p>
+                            <div class="d-grid gap-2">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="buy-form text-start">
+                                <div class="">
+                                    <label for="floatingSelect">Select currency:</label>
+                                    <div class="position-relative">
+                                        <div class="currency-image">
+                                            <img src="images/usd.png" alt="usd" class="select-currncy USDT d-none" />
+                                            <svg class="select-currncy ETH select-doller" width="26" height="27"
+                                                viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2133_438)">
+                                                    <path
+                                                        d="M12 24.745C18.6274 24.745 24 19.3724 24 12.745C24 6.11758 18.6274 0.744995 12 0.744995C5.37258 0.744995 0 6.11758 0 12.745C0 19.3724 5.37258 24.745 12 24.745Z"
+                                                        fill="#218C6F" />
+                                                    <path
+                                                        d="M11.3489 20.1851V18.7182C10.5531 18.643 9.90437 18.4657 9.40286 18.1862C8.91225 17.9069 8.53068 17.5845 8.25811 17.2191C7.98554 16.843 7.78932 16.4776 7.66939 16.123C7.56036 15.7683 7.49493 15.4728 7.47314 15.2364C7.45133 15 7.44043 14.8818 7.44043 14.8818H9.05945C9.05945 14.8818 9.06489 14.957 9.07579 15.1075C9.09761 15.2472 9.14121 15.4298 9.20661 15.6555C9.27204 15.8704 9.38652 16.0961 9.55005 16.3325C9.71359 16.5582 9.93708 16.7678 10.2205 16.9612C10.5149 17.1439 10.891 17.2675 11.3489 17.3319V13.1248L11.2835 13.1086C10.5858 12.9582 9.96979 12.754 9.43557 12.4961C8.91225 12.2382 8.50341 11.8943 8.20905 11.4645C7.92559 11.0346 7.78385 10.4919 7.78385 9.83641C7.78385 9.1809 7.94738 8.6167 8.27445 8.14388C8.61245 7.66028 9.05397 7.28418 9.59911 7.01552C10.1442 6.73611 10.7275 6.56418 11.3489 6.49969V5.06506H12.6409V6.53192C13.3168 6.61791 13.8728 6.78985 14.3089 7.04775C14.7559 7.30566 15.1048 7.60119 15.3556 7.93431C15.6063 8.2567 15.7862 8.5791 15.8952 8.90149C16.0152 9.21313 16.0915 9.47103 16.1242 9.67522C16.1569 9.87939 16.1732 9.98149 16.1732 9.98149H14.5542C14.5542 9.98149 14.5379 9.89552 14.5052 9.72356C14.4725 9.55162 14.3962 9.34208 14.2762 9.0949C14.1563 8.84775 13.9655 8.61133 13.7039 8.38566C13.4531 8.15998 13.0988 7.9988 12.6409 7.90208V11.8675L12.7554 11.8997C13.1805 11.9964 13.6057 12.1146 14.0309 12.2543C14.4561 12.394 14.8377 12.5821 15.1757 12.8185C15.5246 13.0549 15.8026 13.3719 16.0097 13.7696C16.2168 14.1564 16.3204 14.6454 16.3204 15.2364C16.3204 15.8704 16.1569 16.4346 15.8298 16.9289C15.5136 17.4233 15.0776 17.8262 14.5215 18.1379C13.9764 18.4496 13.3495 18.643 12.6409 18.7182V20.1851H11.3489ZM9.37015 9.82028C9.37015 10.2824 9.52824 10.6478 9.84441 10.9164C10.1606 11.1851 10.6621 11.4054 11.3489 11.5773V7.85372C10.7493 7.93969 10.2696 8.16536 9.90981 8.53074C9.55005 8.89611 9.37015 9.32595 9.37015 9.82028ZM14.7341 15.2364C14.7341 14.6991 14.5488 14.2961 14.1781 14.0275C13.8074 13.7588 13.295 13.5492 12.6409 13.3988V17.3319C13.2296 17.2245 13.7257 16.988 14.129 16.6227C14.5324 16.2573 14.7341 15.7952 14.7341 15.2364Z"
+                                                        fill="white" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2133_438">
+                                                        <rect width="24" height="24" fill="white"
+                                                            transform="translate(0 0.744995)" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            <svg id="ethBar" class="select-currncy usdt-cur ETH" width="26" height="27"
+                                                viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M25.9295 13.7453C25.9295 20.8872 20.14 26.6769 12.9982 26.6769C5.85625 26.6769 0.0666504 20.8872 0.0666504 13.7453C0.0666504 6.60344 5.85625 0.813843 12.9982 0.813843C20.1399 0.813843 25.9295 6.60344 25.9295 13.7453Z"
+                                                    fill="#505050" />
+                                                <g opacity="0.8">
+                                                    <path
+                                                        d="M12.9568 7.745L12.877 8.01648V15.8943L12.9568 15.974L16.6136 13.8125L12.9568 7.745Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M12.9568 7.745L9.30005 13.8125L12.9568 15.974V12.1504V7.745Z"
+                                                        fill="white" />
+                                                    <path
+                                                        d="M12.9569 17.1637L12.9119 17.2186V20.0248L12.9569 20.1563L16.6159 15.0033L12.9569 17.1637Z"
+                                                        fill="white" />
+                                                    <path d="M12.9568 20.1563V17.1637L9.30005 15.0033L12.9568 20.1563Z"
+                                                        fill="white" />
+                                                    <path d="M12.9568 15.974L16.6135 13.8125L12.9568 12.1504V15.974Z"
+                                                        fill="white" />
+                                                    <path d="M9.30005 13.8125L12.9568 15.974V12.1504L9.30005 13.8125Z"
+                                                        fill="white" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <select class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option  value="ETH" selected>ETH</option>
+                                            <option value="USDT"  >USDT</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="">
+                                            <div class="mb-2">
+                                                <label class="form-label"><span id=curBarName>ETH</span> You
+                                                    pay:</label>
+                                            </div>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control basie-currency-input "
+                                                    placeholder="0">
+                                                <img src="images/usd.png" id="usdtBar" alt="usd"
+                                                    class="select-currncy usdt-cur d-none" />
+                                                <svg id="ethBar" class="select-currncy usdt-cur ETH" width="26"
+                                                    height="27" viewBox="0 0 26 27" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M25.9295 13.7453C25.9295 20.8872 20.14 26.6769 12.9982 26.6769C5.85625 26.6769 0.0666504 20.8872 0.0666504 13.7453C0.0666504 6.60344 5.85625 0.813843 12.9982 0.813843C20.1399 0.813843 25.9295 6.60344 25.9295 13.7453Z"
+                                                        fill="#505050" />
+                                                    <g opacity="0.8">
+                                                        <path
+                                                            d="M12.9568 7.745L12.877 8.01648V15.8943L12.9568 15.974L16.6136 13.8125L12.9568 7.745Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M12.9568 7.745L9.30005 13.8125L12.9568 15.974V12.1504V7.745Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M12.9569 17.1637L12.9119 17.2186V20.0248L12.9569 20.1563L16.6159 15.0033L12.9569 17.1637Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M12.9568 20.1563V17.1637L9.30005 15.0033L12.9568 20.1563Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M12.9568 15.974L16.6135 13.8125L12.9568 12.1504V15.974Z"
+                                                            fill="white" />
+                                                        <path
+                                                            d="M9.30005 13.8125L12.9568 15.974V12.1504L9.30005 13.8125Z"
+                                                            fill="white" />
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                                <label class="form-label">$GOIL you get:</label>
+                                                <a id="maxBtn" class="max-btn cursor-pointer">Max</a>
+                                            </div>
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control convert-currency-input"
+                                                    placeholder="0">
+                                                <img src="images/s-logo.png" alt="usd"
+                                                    class="select-currncy usdt-cur" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <label for="floatingSelect">Buy $GOIL tokens now:</label>
+                                    <div>
+                                        <button id="connect_wallet" class="submit-btn w-100"
+                                            data-bs-toggle="modal">Connect
+                                            Wallet ($GOIL)</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <p class="content">I have done my own research and understand that purchasing cryptocurrency
+                            involves risks and may result in loss of funds. By participating in the presale, I fully
+                            agree to the terms of the presale</p>
+                    </div>
+                </div>
+            </div>
+            <img src="images/Paw-1.png" alt="paw" class="paw-img" />
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="wallet-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> -->
+                    <div class="modal-body">
+                        <h4 class="text-decoration-underline mb-2">Select Your wallet</h4>
+                        <div class="d-flex flex-wrap my-5 justify-content-center position-relative z-1">
+                            <div class="mx-3 mb-3 p-0 wallet-img" data-wallet="MetaMask">
+                                <img src="images/meta.png" alt="">
+                            </div>
+                            <div class="mx-3 mb-3 p-0 wallet-img" data-wallet="Wallet">
+                                <img src="images/wallter.png" alt="">
+                            </div>
+                            <div class="mx-3 mb-3 p-0 wallet-img" data-wallet="Coinbase">
+                                <img src="images/coinbase.png" alt="">
+                            </div>
+                            <div class="mx-3 mb-3 p-0 wallet-img" data-wallet="Trust Wallet">
+                                <img src="images/trust.png" alt="">
+                            </div>
+                            <div class="mx-3 mb-3 p-0 wallet-img" data-wallet="Rainbow">
+                                <img src="images/rainbow.png" alt="">
+                            </div>
+                            <div class="mx-3 mb-3 p-0 wallet-img" data-wallet="Phantom">
+                                <img src="images/phantom.png" alt="">
+                            </div>
+                            <img src="images/logo-1.png" class="pos-img" alt="">
+                        </div>
+
+
+                        <div class="position-relative z-1">
+                            <p class="wallet-pera">Don`t have a Wallet? <a href="https://metamask.io"
+                                    id="no_wallet_span">
+                                    Click here</a></p>
+                            <p class="wallet-pera">By connecting I accept GOIL <a href="c/terms.html"
+                                    id="terms_span">Terms
+                                    of Use </span></a></p>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how_works" class="work-sec padd-120">
+        <div class="container position-relative">
+            <div class="text-center mb-4">
+                <div class="position-relative">
+                    <h2 class="title">How It Works</h2>
+                </div>
+            </div>
+            <div class="row padd-120 work-list">
+                <div class="col-lg-3">
+                    <div class="work-content">
+                        <h3>Grab Some $GOIL</h3>
+                        <p>Grab Some $GOIL: Grab your coin through our platform or on popular Dexes & exchanges</p>
+                        <img src="images/arrow.png" alt="arrow" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="work-content">
+                        <h3>Climb the Ranks</h3>
+                        <p>The more $GOIL you hold, the higher you climb on the leaderboard!</p>
+                        <img src="images/arrow1.png" alt="arrow" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="work-content">
+                        <h3>Join the Squad</h3>
+                        <p>Connect with other GOILers, vote on initiatives, and help shape the future of this awesome
+                            project</p>
+                        <img src="images/arrow2.png" alt="arrow" />
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="work-content">
+                        <h3>Watch the Impact</h3>
+                        <p>As $GOIL grows, so does its ability to make a real difference for Israel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Go Israel -->
+    <section id="who_goil" class="israel-sec pb-30">
+        <div class="container position-relative">
+            <div class="text-center mb-4 d-none d-sm-inline">
+                <div class="position-relative">
+                    <h2 class="title">Why GO ISrael?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <img src="images/map.png" alt="map" class="sheld-img" />
+                </div>
+                <div class="position-relative text-center d-sm-none">
+                    <h2 class="title">Why GO ISrael?</h2>
+                </div>
+                <div class="col-lg-6 go-info">
+                    <div class="go-content">
+                        <h3>🚀 Aim for the Top</h3>
+                        <p>Let’s turn the crypto charts into a powerful platform for Israel!</p>
+                    </div>
+                    <div class="go-content">
+                        <h3>💪 Fueled by Action</h3>
+                        <p>Your passion keeps the momentum going. Every coin, every post share makes a difference!</p>
+                    </div>
+                    <div class="go-content">
+                        <h3>🔥 Driven by Passion </h3>
+                        <p>$GOIL is fast, bold, and unstoppable - just like the spirit of Israel!</p>
+                    </div>
+                    <h4>Join the GOIL fam, support Israel, And Let’s change the narrative together!</h4>
+                    <button id="bottom_btn" class="default-btn">Buy GOIL Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard -->
+    <section id="leader_section" class="board-sec padd-120">
+        <!-- <div class="container position-relative">
+            <div class="text-center mb-4">
+        <div class="position-relative">
+          <h2 class="title">leaderboard</h2>
+        </div>
+    </div>
+      <div class="row board-info mb-4 d-none d-md-flex">
+        <div class="col-sm-4 borad-list text-center second-winner">
+          <div class="winner-img">
+            <img src="images/w2.png" alt="" width="60" />
+            <h5>2</h5>
+          </div>
+          <div class="winner-content">
+            <h3>1039xxxxx0070</h3>
+            <h4>12M GOIL</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 borad-list text-center first-winner">
+          <div class="">
+            <img src="images/winner.png" alt="winner" class="winner-icon" />
+            <div class="winner-img">
+              <img src="images/w2.png" alt="" width="70" />
+              <h5>1</h5>
+            </div>
+          </div>
+          <div class="winner-content">
+            <h3>1039xxxxx0070</h3>
+            <h4>43M GOIL</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 borad-list text-center third-winner">
+          <div class="winner-img">
+            <img src="images/w2.png" alt="" width="60" />
+            <h5>3</h5>
+          </div>
+          <div class="winner-content">
+            <h3>1039xxxxx0070</h3>
+            <h4>343K GOIL</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row board-info mb-4 d-md-none">
+        <div class="col-sm-4 borad-list text-center first-winner">
+          <div class="">
+            <img src="images/winner.png" alt="winner" class="winner-icon" />
+            <div class="winner-img">
+              <img src="images/w2.png" alt="" width="70" />
+              <h5>1</h5>
+            </div>
+          </div>
+          <div class="winner-content">
+            <h3>1039xxxxx0070</h3>
+            <h4>43M GOIL</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 borad-list text-center">
+          <div class="winner-img">
+            <img src="images/w2.png" alt="" width="60" />
+            <h5>2</h5>
+          </div>
+          <div class="winner-content">
+            <h3>1039xxxxx0070</h3>
+            <h4>12M GOIL</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 borad-list text-center">
+          <div class="winner-img">
+            <img src="images/w2.png" alt="" width="60" />
+            <h5>3</h5>
+          </div>
+          <div class="winner-content">
+            <h3>1039xxxxx0070</h3>
+            <h4>343K GOIL</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8 mx-auto">
+          <div class="winner-list mb-4">
+            <div class="d-md-flex d-grid gap-2 w-full align-items-center justify-content-md-between">
+              <div class="d-md-flex d-grid align-items-center gap-2 gap-md-5 justify-content-center">
+                <h5>4</h5>
+                <h3 class="mb-0">1039xxxxx0070</h3>
+              </div>
+              <h4 class="mb-0">12M GOIL</h4>
+            </div>
+          </div>
+          <div class="winner-list mb-4">
+            <div class="d-md-flex d-grid gap-2 w-full align-items-center justify-content-md-between">
+              <div class="d-md-flex d-grid align-items-center gap-2 gap-md-5 justify-content-center">
+                <h5>5</h5>
+                <h3 class="mb-0">1039xxxxxxxxxx007</h3>
+              </div>
+              <h4 class="mb-0">2,431 GOIL</h4>
+            </div>
+          </div>
+          <div class="winner-list mb-5">
+            <div class="d-md-flex d-grid gap-2 w-full align-items-center justify-content-md-between">
+              <div class="d-md-flex d-grid align-items-center gap-2 gap-md-5 justify-content-center">
+                <h5>6</h5>
+                <h3 class="mb-0">1039xxxxxxxxxx007</h3>
+              </div>
+              <h4 class="mb-0">2,431 GOIL</h4>
+            </div>
+          </div>
+        </div>  -->
+            <div class="text-center">
+                <button class="default-btn white-btn">Leaderboard Page Coming Soon</button>
+            </div>
+            <div class="text-center">
+                <img src="images/coin.png" alt="coin" class="coin-img" />
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics -->
+    <section id="token_section" class="tokenomics-sec padd-120">
+        <div class="container position-relative">
+            <div class="text-center mb-5">
+                <h2 class="title">Tokenomics</h2>
+                <p>$GOIL is your chance to show your love for Israel in a way that's fun, fresh, and impactful. Every
+                    coin you hold is a digital boost to the spirit of innovation, strength, and unity that makes Israel
+                    so special. It's also your opportunity to become a digital ambassador for Israel, shining a bright
+                    light on the global stage</p>
+            </div>
+            <div class="row gap-4 gap-md-0">
+                <div class="col-sm-4">
+                    <div class="tokenomics-info">
+                        <h3>Utility</h3>
+                        <ul>
+                            <li>Voting power in $GOIL DAO</li>
+                            <li>Help shape and control the narrative</li>
+                            <li>Stake to earn rewards</li>
+                            <li>Decide on treasury allocation</li>
+                            <li>Compete in leaderboard rankings</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="tokenomics-info">
+                        <h3> Mechanisms</h3>
+                        <ul>
+                            <li>A portion of each transaction fee goes to the treasury for community use</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="tokenomics-info">
+                        <h3>Token Distribution</h3>
+                        <ul>
+                            <li>Pre-Sale: 10%</li>
+                            <li>Public Sale: 30%</li>
+                            <li>Treasury: 30%</li>
+                            <li>Community and Ecosystem: 10%</li>
+                            <li>Founders and Team: 20%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faq -->
+    <section id="faq_section" class="faq-sec padd-120">
+        <div class="container position-relative">
+            <div class="text-center mb-0 mb-lg-5">
+                <h2 class="title">FAQ</h2>
+            </div>
+            <div class="row flex-row-reverse">
+                <div class="col-sm-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <p>What is $GOIL?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body fw-bold">
+                                    $GOIL is a cryptocurrency token designed to serve as a digital ambassador for
+                                    Israel. It combines the excitement of crypto markets with passionate support for
+                                    Israel.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <p>How does $GOIL support Israel?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body fw-bold"> 
+                                    By creating visibility on crypto charts and fostering a community of supporters,
+                                    $GOIL raises awareness and demonstrates solidarity with Israel in the digital space.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <p>What is the $GOIL leaderboard?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body fw-bold">The leaderboard ranks token holders based on their
+                                    holdings. It's a fun way to engage the community and recognize top supporters.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <p>What makes $GOIL different from other cryptocurrencies?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body fw-bold">$GOIL uniquely combines cryptocurrency dynamics with
+                                    support for Israel, creating a platform for digital advocacy and community
+                                    engagement.</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <p>How can I get involved beyond buying tokens?</p>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body fw-bold">You can join our community discussions, participate
+                                    in our DAO governance, and help spread the word about $GOIL on social media,
+                                    becoming an active digital ambassador for Israel.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="images/Paw.png" alt="paw" class="faq-img" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-sec">
+        <div class="container position-relative">
+            <div class="d-grid gap-5">
+                <h4>$GOIL – ISRAEL’S DIGITAL AMBASSADOR!</h4>
+                <img src="images/footer-bg.png" alt="" class="mx-auto footer-bg" />
+                <div>
+                    <ul class="footer-social-icon mb-4">
+                        <li><a href="https://x.com/goil_goisrael?s=11">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9.52373 7.07527L15.4811 0.299805H14.0699L8.89493 6.18194L4.7648 0.299805H0L6.24693 9.19581L0 16.2998H1.4112L6.87253 10.0865L11.2352 16.2998H16M1.92053 1.34087H4.08853L14.0688 15.3094H11.9003"
+                                        fill="white" />
+                                </svg>
+                            </a></li>
+                        <!-- <li><a href="#">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31469 7.2006C6.46775 4.94994 9.89762 3.45394 11.6203 2.7286C16.5232 0.669938 17.5536 0.314738 18.216 0.299805C18.3632 0.299805 18.6875 0.329671 18.9083 0.507271C19.0843 0.655005 19.1291 0.847538 19.1584 0.995805C19.1878 1.14407 19.2171 1.45447 19.1878 1.6918C18.9227 4.50514 17.7744 11.3318 17.1856 14.4715C16.935 15.8038 16.4496 16.2486 15.9782 16.2929C14.9478 16.3814 14.1675 15.6118 13.1808 14.9595C11.6203 13.9382 10.752 13.3014 9.23522 12.2945C7.48322 11.1393 8.61655 10.5025 9.61815 9.46621C9.88322 9.19954 14.4032 5.0534 14.4912 4.68327C14.5062 4.63847 14.5062 4.46087 14.4032 4.37234C14.2998 4.28327 14.1526 4.3126 14.0352 4.34247C13.8731 4.37234 11.3995 6.03047 6.58509 9.30301C5.87842 9.79207 5.24535 10.0289 4.67149 10.0139C4.03842 9.99901 2.83149 9.65874 1.91842 9.36274C0.81442 9.007 -0.0693134 8.81447 0.00428661 8.19261C0.0485533 7.86727 0.490153 7.54087 1.31469 7.2006Z" fill="white" />
+                            </svg>
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.60064 0.299805C6.99392 0.299805 6.66624 0.311325 5.64224 0.357405C4.6208 0.405405 3.9232 0.567325 3.31264 0.804765C2.67174 1.04555 2.09117 1.42342 1.61152 1.91196C1.12342 2.39148 0.745601 2.97153 0.50432 3.6118C0.26496 4.22172 0.10304 4.91933 0.0576 5.94077C0.0128 6.9654 0 7.29309 0 9.89981C0 12.5065 0.01152 12.8329 0.0576 13.8569C0.10496 14.879 0.26688 15.5766 0.50432 16.1872C0.745279 16.8278 1.12314 17.4081 1.61152 17.8876C2.09073 18.3763 2.67086 18.7543 3.31136 18.9955C3.92192 19.2329 4.62016 19.3948 5.6416 19.4416C6.6656 19.4883 6.99264 19.4998 9.59936 19.4998C12.2074 19.4998 12.5331 19.4883 13.5571 19.4422C14.5792 19.3948 15.2781 19.2329 15.8886 18.9955C16.5289 18.7545 17.1088 18.3767 17.5878 17.8883C18.0763 17.4084 18.4543 16.8279 18.6957 16.1872C18.9325 15.5766 19.0938 14.879 19.1418 13.8576C19.1878 12.8336 19.2 12.5072 19.2 9.89981C19.2 7.29245 19.1878 6.9654 19.1424 5.9414C19.0938 4.91932 18.9318 4.22172 18.6957 3.6118C18.4546 2.97106 18.0768 2.39055 17.5885 1.91068C17.1092 1.42198 16.5288 1.04407 15.888 0.803485C15.2762 0.566685 14.5779 0.404765 13.5558 0.358045C12.5318 0.311325 12.2054 0.299805 9.59808 0.299805H9.6H9.60064ZM8.73984 2.02972H9.6C12.1632 2.02972 12.4672 2.03868 13.4797 2.08476C14.4154 2.12764 14.9235 2.28444 15.2621 2.41564C15.7101 2.58972 16.0294 2.79772 16.3654 3.13372C16.7008 3.46972 16.9094 3.78972 17.0835 4.23772C17.2147 4.57564 17.3715 5.08381 17.4144 6.01949C17.4605 7.03133 17.4701 7.33532 17.4701 9.89789C17.4701 12.4598 17.4605 12.7638 17.4144 13.7756C17.3715 14.7113 17.2147 15.2195 17.0835 15.5574C16.9297 15.9741 16.6843 16.3509 16.3654 16.6601C16.056 16.979 15.679 17.2244 15.2621 17.3782C14.9242 17.5107 14.4154 17.6662 13.4797 17.7091C12.4678 17.7552 12.1632 17.7654 9.6 17.7654C7.0368 17.7654 6.7328 17.7552 5.7216 17.7091C4.78528 17.6662 4.27712 17.5094 3.93856 17.3782C3.49056 17.2041 3.17056 16.9961 2.83456 16.6601C2.51559 16.3506 2.27 15.9736 2.11584 15.5568C1.98464 15.2188 1.82784 14.7107 1.7856 13.775C1.73952 12.7625 1.72992 12.4585 1.72992 9.89533C1.72992 7.33149 1.73952 7.02941 1.7856 6.01692C1.82848 5.08124 1.984 4.57308 2.11584 4.23452C2.28992 3.78652 2.49856 3.46652 2.83456 3.13052C3.14438 2.8118 3.5216 2.56645 3.93856 2.41244C4.27712 2.2806 4.78528 2.12444 5.72096 2.08156C6.60672 2.04124 6.94976 2.02972 8.7392 2.02716V2.02972H8.73984ZM14.7251 3.62332C14.5738 3.62332 14.4239 3.65314 14.284 3.71106C14.1442 3.76899 14.0171 3.85389 13.9101 3.96093C13.803 4.06796 13.7181 4.19502 13.6602 4.33487C13.6023 4.47471 13.5725 4.6246 13.5725 4.77597C13.5725 4.92733 13.6023 5.07722 13.6602 5.21706C13.7181 5.35691 13.803 5.48397 13.9101 5.591C14.0171 5.69804 14.1442 5.78294 14.284 5.84087C14.4239 5.89879 14.5738 5.92861 14.7251 5.92861C15.0308 5.92861 15.324 5.80717 15.5402 5.591C15.7563 5.37484 15.8778 5.08166 15.8778 4.77597C15.8778 4.47027 15.7563 4.17709 15.5402 3.96093C15.324 3.74476 15.0308 3.62332 14.7251 3.62332ZM9.60064 4.96988C8.29306 4.96988 7.03903 5.48932 6.11443 6.41392C5.18983 7.33852 4.6704 8.59254 4.6704 9.90013C4.6704 11.2077 5.18983 12.4617 6.11443 13.3863C7.03903 14.3109 8.29306 14.8304 9.60064 14.8304C10.9082 14.8304 12.1622 14.3109 13.0868 13.3863C14.0114 12.4617 14.5309 11.2077 14.5309 9.90013C14.5309 8.59254 14.0114 7.33852 13.0868 6.41392C12.1622 5.48932 10.9082 4.96988 9.60064 4.96988ZM9.60064 6.69981C10.4493 6.69981 11.2633 7.03695 11.8634 7.63706C12.4635 8.23718 12.8006 9.05111 12.8006 9.89981C12.8006 10.7485 12.4635 11.5624 11.8634 12.1625C11.2633 12.7627 10.4493 13.0998 9.60064 13.0998C8.75195 13.0998 7.93802 12.7627 7.3379 12.1625C6.73778 11.5624 6.40064 10.7485 6.40064 9.89981C6.40064 9.05111 6.73778 8.23718 7.3379 7.63706C7.93802 7.03695 8.75195 6.69981 9.60064 6.69981Z" fill="white" />
+                            </svg>
+
+                        </a></li> -->
+                        <li><a
+                                href="https://discord.com/channels/1247063478246576250/1264858220720160769#:~:text=%23%F0%9F%91%91%E2%94%82admins-,35sKZTcN,-0"><i
+                                    class="fa-brands fa-discord"></i></a></li>
+                    </ul>
+                    <ul class="footer-list d-grid d-md-flex justify-content-center gap-4">
+                        <li><a href="#">How To Buy</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Why GOIL?</a></li>
+                        <li><a href="#">Leaderboard</a></li>
+                        <li><a href="#">Tokenomics</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="disclaimer-content mb-3">
+                    <h3 class="mb-3">Disclaimer</h3>
+                    <p>$GOIL is a community-driven meme-based cryptocurrency created for entertainment purposes only.
+                        Participation in cryptocurrency activities involves significant risks and potential losses. The
+                        project operates through community engagement with no official team oversight. This is not
+                        financial advice.
+                        Always conduct your own research (DYOR) and understand the risks before participating.
+                        Cryptocurrency activity may not be suitable for everyone.
+                        Restricted Regions: Residents of Afghanistan, Benin, Bhutan, China, Crimea region, Cuba, Iran,
+                        Iraq, Syria, USA, Vatican City, North Korea, Lebanon or any person in jurisdictions where such
+                        activities would be contrary to local law or regulation should not participate. The information
+                        on this site is not intended for use by individuals in jurisdictions where cryptocurrency
+                        activities are not permitted by law.
+                    </p>
+                </div>
+                <div>
+                    <ul class="footer-list d-flex justify-content-center gap-4">
+                        <li><a href="c/terms.html">Terms of Use</a></li>
+                        <li><a href="access.html">Accessibility Statement</a></li>
+                        <!-- <li><a href="c/privacy-policy.html">Privacy Policy</a></li> -->
+                    </ul>
+                    <p>GO ISRAEL © 2024. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="success-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body text-center">
+                    <h4 id="p_headline1" class="success-head mb-2">Your Support Means everything!</h4>
+                    <img src="images/home-logo.png" alt="">
+                    <h3 id="p_headline2" class="success-h3">You Successfully bought</h3>
+                    <h4 id="p_content" class="success-h4">86.42k $Goil</h4>
+                    <p id="p_footer" class="success-pera">Your wallet balance has been updated</p>
+                    <div class="d-flex justify-content-center align-items margin-30">
+                        <div id="p_btn1_box" class="text-center success-div">
+                            <a id="p_btn1_link" href="#" class="success-link text-center mx-auto">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.0134 2.02592H17.4474L6.50709 12.9808C5.77026 13.9266 6.86377 14.98 7.82465 14.2017C8.98423 13.2631 10.0203 11.8336 11.177 10.8538L18.7401 3.3176V8.79528C18.7401 8.81203 18.843 9.0608 18.8645 9.10146C19.2298 9.8004 20.3276 9.64157 20.5 8.87948L20.4751 0.794997C20.3583 0.522787 20.117 0.307028 19.8187 0.254883L11.8731 0.25871C10.9113 0.513219 11.0238 1.89245 12.0139 2.02592H12.0134ZM14.479 3.50896H2.86894C1.8348 3.50896 0.541653 4.83413 0.5 5.878V17.8844C0.664696 19.1354 1.65814 20.1109 2.91538 20.2549L14.8376 20.2525C15.9728 20.2037 17.2564 18.9178 17.2564 17.7897V6.28368L15.4859 8.07864V17.5036C15.4706 18.0174 15.0928 18.4872 14.5532 18.4848L2.90676 18.4456C2.5812 18.3092 2.28436 18.0198 2.26904 17.6476L2.29346 5.94737C2.43901 5.55316 2.77845 5.29674 3.20264 5.27713H12.6827L14.479 3.50896Z"
+                                        fill="white" />
+                                    <path
+                                        d="M14.479 3.50879L12.6827 5.27791H3.20264C2.77845 5.29657 2.43901 5.55299 2.29346 5.9472L2.26904 17.6474C2.28436 18.0196 2.5812 18.3095 2.90676 18.4454L14.5532 18.4846C15.0928 18.487 15.4706 18.0172 15.4864 17.5034V8.07847L17.2559 6.28351V17.789C17.2559 18.9176 15.9723 20.2035 14.8371 20.2518L2.9149 20.2542C1.65814 20.1107 0.664696 19.1353 0.5 17.8842V5.87783C0.541653 4.83396 1.8348 3.50879 2.86894 3.50879H14.479Z"
+                                        fill="#0038B8" />
+                                    <path
+                                        d="M12.0134 2.02592C11.0233 1.89245 10.9108 0.513219 11.8727 0.25871L19.8183 0.254883C20.117 0.307028 20.3578 0.522787 20.4747 0.794997L20.4996 8.87948C20.3267 9.64205 19.2294 9.80088 18.8641 9.10146C18.8426 9.0608 18.7396 8.81155 18.7396 8.79528V3.3176L11.1765 10.8538C10.0198 11.8336 8.98379 13.2631 7.82421 14.2017C6.86285 14.98 5.76983 13.9266 6.50665 12.9808L17.4474 2.02592H12.0134Z"
+                                        fill="#0038B8" />
+                                </svg>
+
+                            </a>
+                            <span id="p_btn1_content" class="d-block">
+                                Show transaction
+                            </span>
+                        </div>
+                        <div id="p_btn2_box" class="text-center success-div">
+                            <a id="p_btn2_link" href="https://x.com/goil_goisrael?s=11" class="success-link mx-auto">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.5976 8.42131L18.8208 0.206055H17.1098L10.8352 7.33814L5.82737 0.206055H0.0500488L7.62446 10.9925L0.0500488 19.6061H1.76113L8.38299 12.0724L13.6727 19.6061H19.45M2.3787 1.46835H5.0074L17.1085 18.4052H14.4791"
+                                        fill="#0038B8" />
+                                </svg>
+
+
+                            </a>
+                            <span id="p_btn2_content" class="d-block">
+                                Share <br> on X
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/icon.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.2.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <!-- Accessibility -->
+<script>
+    window.args = {
+        sitekey   : 'bd8afae57206f741985a298dfb86cd37',
+        position  : 'Left',
+        language  : 'EN',
+        container : '',
+        icon : '',
+        access : 'https://vee-crm.com',
+        styles : {
+            primary_color: '#000000',
+            secondary_color: '#b586ff',
+            background_color: '#f6f6f6',
+            primary_text_color: '#636363',
+            headers_text_color: '#105675',
+            primary_font_size: 14,
+            slider_left_color:  '#b586ff',
+            slider_right_color:  '#177fab',
+            icon_vertical_position: 'top',
+            icon_offset_top: 100,
+            icon_offset_bottom: 0,
+            highlight_focus_color: '#177fab',
+            toggler_icon_color: '#ffffff',
+        },
+        links : {
+            acc_policy: '',
+            additional_link: 'https://vee.co.il/pricing/'
+        },
+        options : {
+            open: false,
+            aaa: false,
+            hide_tablet: false,
+            hide_mobile: false, 
+            button_size_tablet: 54,
+            button_size_mobile: 54,
+            position_tablet: 'Right',
+            position_mobile: 'Right',
+            icon_vertical_position_tablet: 'top',
+            icon_vertical_position_mobile: 'top',
+            icon_offset_top_tablet: 100,
+            icon_offset_bottom_tablet: 0,
+            icon_offset_top_mobile: 100,
+            icon_offset_bottom_mobile: 0,
+            keyboard_shortcut: true,
+            hide_purchase_link: false,
+            display_checkmark_icon: false,
+            active_toggler_color: '#118f38'
+        },
+        // Optional, values: high-contast, negative, grayscale, black-white, highlight-links, keyboard-navigation, text, word-spacing, letter-spacing, readable-text, alt, cursor, reading, animations, highlight-titles (Use Quotes, comma seperated)
+        exclude : []
+    };
+    
+    (function(doc, head, body){
+        var embed = doc.createElement('script');
+        embed.src = window.args['access'] + '/js/';
+        embed.defer = true;
+        embed.crossOrigin = 'anonymous';
+        embed.setAttribute('data-cfasync', true );
+        body? body.appendChild(embed) : head.appendChild(embed);
+    })(document, document.head, document.body);
+    </script>
+    
+</body>
+
+</html>
